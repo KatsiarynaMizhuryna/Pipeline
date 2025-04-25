@@ -24,9 +24,9 @@ jobs:
           HEADLESS: "true"
         run: |
           cd AT-in-JS-Practice
-          npm run test:cucumber || true
-          pkill -f chromedriver || true
-          pkill -f chrome || true
+          npm run test:cucumber
+          pkill -f chromedriver
+          pkill -f chrome
 
       - name: Run Mocha tests
         run: |
