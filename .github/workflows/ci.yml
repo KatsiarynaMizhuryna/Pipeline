@@ -28,6 +28,11 @@ jobs:
           pkill -f chromedriver || true
           pkill -f chrome || true
 
+      - name: Run Mocha tests
+        run: |
+          cd AT-in-JS-Practice
+          npm run test:mocha
+
   api-tests:
     runs-on: ubuntu-latest
     steps:
