@@ -14,7 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm ci
+        run:
+          git clone https://github.com/KatsiarynaMizhuryna/AT-in-JS-Practice.git
+          cd AT-in-JS-Practice
+          npm ci
         working-directory: AT-in-JS-Practice
 
       - name: Run UI tests with Cucumber
@@ -30,7 +33,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        run: npm ci
+        run:
+          git clone https://github.com/KatsiarynaMizhuryna/AT-in-JS-Practice.git
+          cd AT-in-JS-Practice
+          npm ci
         working-directory: AT-in-JS-Practice
 
       - name: Run API tests
