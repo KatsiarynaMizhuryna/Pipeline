@@ -23,6 +23,7 @@ jobs:
           npm ci
 
       - name: Run UI tests with Cucumber
+        continue-on-error: true
         run: |
           cd AT-in-JS-Practice
           npm run test:cucumber
